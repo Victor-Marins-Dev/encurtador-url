@@ -20,7 +20,6 @@
 
 #### OBS:
   - Implementei por pura curiosidade; não foi feito tratamento de exceções e, tampouco, validações. Estou deixando aqui só para registrar meus estudos.
-<br>
 
 #### OBS 2:
    - Não criei um arquivo .env e deixei as variáveis de ambiente expostas de propósito, com o intuito de facilitar para quem está clonando o projeto.
@@ -81,17 +80,17 @@ A API possui somente dois endpoints:
    cd encurtador.url
    ```
 5. **Construir e rodar os contêineres**  
-   No diretório do projeto, execute o comando abaixo para construir a imagem e iniciar o container com o Docker Compose:
+   No diretório do projeto, execute o comando abaixo para construir as imagens e iniciar o container com o Docker Compose:
    ```bash
    docker-compose up --build
    ```
-    O `--build` garante que a imagem seja construída a partir do Dockerfile.
-    Se a imagem já foi construída e você não quiser reconstruí-la, pode rodar apenas:
+    O `--build` garante que as imagens sejam construídas a partir do Dockerfile.
+    Se as imagem já foram construída e você não quiser reconstruí-las, pode rodar apenas:
     ```bash
     docker-compose up
     ```
 6. **Verificar se tudo está rodando**  
-   Após o comando acima, o Docker Compose deve iniciar o container definido no arquivo `docker-compose.yml`. Você pode verificar se o container esta rodando corretamente com:
+   Após o comando acima, o Docker Compose deve iniciar os containers definidos no arquivo `docker-compose.yml`. Você pode verificar se os containers estão rodando corretamente com:
     ```bash
     docker ps
     ```
